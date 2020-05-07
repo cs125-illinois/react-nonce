@@ -54239,7 +54239,11 @@ parcelRequire = (function (e, r, t, n) {
             var t = e.className,
               a = e.children,
               i = t.replace(/language-/, "")
-            return r.default.createElement(l.default, { style: n.default, language: i }, a)
+            return r.default.createElement(
+              l.default,
+              { style: n.default, language: i, customStyle: { fontSize: "0.9rem" } },
+              a
+            )
           }
         g.propTypes = { className: t.default.string.isRequired, children: t.default.string.isRequired }
         var m = { code: g },
@@ -54303,4 +54307,4 @@ parcelRequire = (function (e, r, t, n) {
   ["zo2T"],
   null
 )
-//# sourceMappingURL=/react-nonce/example.098465f0.js.map
+//# sourceMappingURL=/react-nonce/example.d711c51e.js.map
