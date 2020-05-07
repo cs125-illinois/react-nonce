@@ -19,7 +19,7 @@ import { NonceProvider } from "@cs125/react-nonce"
 const SyntaxHighlighter: React.FC<{ className: string; children: string }> = ({ className, children }) => {
   const language = className.replace(/language-/, "")
   return (
-    <PrismLight style={style} language={language}>
+    <PrismLight style={style} language={language} customStyle={{ fontSize: "0.9rem" }}>
       {children}
     </PrismLight>
   )
